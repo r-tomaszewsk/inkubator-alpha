@@ -10,4 +10,4 @@ with that tool we can display
 * market 
 * series 
 ## Authors
-This is authors of the app
+t.pawlowski, b.maluj
