@@ -1,3 +1,3 @@
 # inkubator-alpha
-## Motivation
-Brief description about motivation
+## Authors
+This is authors of the app
