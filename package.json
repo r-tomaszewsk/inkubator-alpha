@@ -1,0 +1,22 @@
+{
+  "name": "inkubator-alpha",
+  "version": "1.0.0",
+  "description": "This is app that can show basic information about passed model code of TV\r ![Screen of app](images/ink.png)\r ## Motivation\r Brief description about motivation\r ## Features \r with that tool we can display \r * size of screen\r * year\r * market \r * series \r ## Authors\r t.pawlowski, b.maluj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-tomaszewsk/inkubator-alpha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-tomaszewsk/inkubator-alpha/issues"
+  },
+  "homepage": "https://github.com/r-tomaszewsk/inkubator-alpha#readme",
+  "devDependencies": {
+    "eslint": "^5.15.3"
+  }
+}
