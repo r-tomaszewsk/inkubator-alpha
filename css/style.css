@@ -10,24 +10,33 @@ body {
   background-image: url(../images/kote-puerto-704591-unsplash.jpg);
   background-size: cover;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #screenSize {
-
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 #year {
-
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #region {
-
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 #series {
-
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 #matrixType {
-
+  position: absolute;
+  bottom: 0px;
+  left:50%;
 }
 input {
   padding: 5px 32px;
