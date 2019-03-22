@@ -4,8 +4,7 @@
   "description": "This is app that can show basic information about passed model code of TV\r ![Screen of app](images/ink.png)\r ## Motivation\r Brief description about motivation\r ## Features \r with that tool we can display \r * size of screen\r * year\r * market \r * series \r ## Authors\r t.pawlowski, b.maluj",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "gulp copy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
