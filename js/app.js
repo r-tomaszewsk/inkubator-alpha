@@ -9,8 +9,19 @@ document.getElementById("button").addEventListener("click", function(event){
     secondPageElements[i].classList.remove("hidden");
   }
   var modelCodeFromInput = document.getElementById("modelCodeTextBox").value;
-  console.log(app.modelCode.parse(modelCodeFromInput));
-  
+  var yourModelCode = app.modelCode.parse(modelCodeFromInput);
+  var screenSizeHTML = document.getElementById("screenSize");
+  var yearHTML = document.getElementById("year");
+  var regionHTML = document.getElementById("region");
+  var matrixTypeHTML = document.getElementById("matrixType");
+  var seriesHTML = document.getElementById("series");
+  console.log(yourModelCode);
+  screenSizeHTML.innerText = yourModelCode.screenSize.name;
+  yearHTML.innerText = yourModelCode.year.name;
+  regionHTML.innerText = yourModelCode.region.name;
+  matrixTypeHTML.innerText = yourModelCode.matrixType.name;
+  seriesHTML.innerText = yourModelCode.series.name;
+  //ue65mus9000t
   event.preventDefault();
 });
 document.getElementById("getModelButton").addEventListener("click", function(event){
