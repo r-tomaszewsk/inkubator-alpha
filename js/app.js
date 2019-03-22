@@ -8,6 +8,9 @@ document.getElementById("button").addEventListener("click", function(event){
   for (i = 0; i < secondPageElements.length; i++){
     secondPageElements[i].classList.remove("hidden");
   }
+  var modelCodeFromInput = document.getElementById("modelCodeTextBox").value;
+  console.log(app.modelCode.parse(modelCodeFromInput));
+  
   event.preventDefault();
 });
 document.getElementById("getModelButton").addEventListener("click", function(event){
