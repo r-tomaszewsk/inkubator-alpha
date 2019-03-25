@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/r-tomaszewsk/inkubator-alpha#readme",
   "devDependencies": {
+    "del": "^4.0.0",
     "eslint": "^5.15.3"
   },
   "dependencies": {
