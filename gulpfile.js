@@ -6,6 +6,7 @@ function copy() {
     './**/*'
     ,'!./node_modules'   
     ,'!./node_modules/**/*'
+    ,'!./builder.bat'
   ])
   .pipe(dest('./export/'));
 }
