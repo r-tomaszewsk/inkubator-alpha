@@ -1,5 +1,4 @@
 const { src, dest } = require('gulp');
-var del = require('del');
 
 function copy() {
   return src([
@@ -10,6 +9,5 @@ function copy() {
   ])
   .pipe(dest('./export/'));
 }
-
 
 exports.copy = copy;
