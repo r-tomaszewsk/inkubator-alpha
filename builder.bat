@@ -1,3 +1,4 @@
+call gulp copy
 call rd /s .buildResult
 call tizen build-web -- ".\export"
 call cd export

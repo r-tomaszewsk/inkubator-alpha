@@ -48,21 +48,26 @@ window.app.nav = function(tizen) {
             //     tizen && tizen.application.getCurrentApplication().exit();
             //     break;
             case SELECT_BUTTON:
-                //console.log('select ' + e.keyCode);
+                app.app.onEnter();
+                e.preventDefault();
+                e.stopPropagation();
                 break;
             case DOWN_ARROW_BUTTON:
             case RIGHT_ARROW_BUTTON:
                 goToNextElem(1);
-                e.preventDefault();
                 break;
             case UP_ARROW_BUTTON:
             case LEFT_ARROW_BUTTON:
                 goToNextElem(-1);
-                e.preventDefault();
+                break;
+            case 65376:
+            case 65385:
+                getDomActiveElem().blur();
                 break;
             default:
                 console.warn('unknown keyCode: ' + e.keyCode);
         }
+
     }
     /**
      * Binds Default Events.
@@ -133,14 +138,18 @@ window.app.nav = function(tizen) {
     function determinMaxTabIndex() {
         return document.querySelectorAll('[tabindex]').length - 1;
     }
-
+    
+    function getDomActiveElem(){
+        return document.querySelector("." + ACTIVE_CSS_CLASS);
+    }
     return {
         init: function(activeCssClass) {
             ACTIVE_CSS_CLASS = activeCssClass || 'active';
             bindDefaultEvents();
             MAX_TAB_INDEX = determinMaxTabIndex();
             goToNextElem();
-        }
+        },
+        getActiveElement: getDomActiveElem
     };
 
 }(window.tizen);
