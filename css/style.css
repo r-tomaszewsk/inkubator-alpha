@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hidden, form > input.hidden {
+.hidden, input.hidden {
   display: none;
 }
 
