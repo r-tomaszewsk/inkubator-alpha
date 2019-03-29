@@ -67,8 +67,8 @@ input[type="button"] {
     display: inline-block;
   }
 object {
-  left: 100px;
-  top: 200px;
-  width: 600px;
-  height: 400px;
+  left: 0px;
+  top: 100px;
+  width: 800px;
+  height: 600px;
 }

@@ -2,6 +2,7 @@ var objElem = document.createElement('object');
 var secondPage = document.getElementById('secondPage');
 objElem.type = 'application/avplayer';
 secondPage.appendChild(objElem);
+
 var listener = {
     onbufferingstart: function () {
         console.log("Buffering start.");
@@ -42,10 +43,13 @@ var listener = {
 tizen.filesystem.resolve('wgt-package/images/QE75Q6FNA.mp4', function (file) {
     var videoURL = file.toURI();
     console.log(videoURL);
-    webapis.avplay.setListener(listener);
-    webapis.avplay.setDisplayRect(400, 500, 1200, 800);
-    webapis.avplay.prepare();
     webapis.avplay.open(videoURL);
+    webapis.avplay.setDisplayRect(605, 230, 800, 600);
+    webapis.avplay.setListener(listener);
+    webapis.avplay.setLooping(true);
+    webapis.avplay.prepareAsync(function(){
+        webapis.avplay.play();
+    });
 }, function () { console.log("error") }, 'r');
 /*
 
