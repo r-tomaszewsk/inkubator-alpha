@@ -17,11 +17,16 @@ body {
 .hidden, input.hidden {
   display: none;
 }
-
 #screenSize {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+#year, #region, #screenSize, #series, #matrixType {
+  padding: 2em;
+  font-size: 1.5em;
+  background-color: #47AB6C;
+  font-weight: bold;
 }
 #year {
   position: absolute;
@@ -61,3 +66,9 @@ input[type="button"] {
     text-decoration: none;
     display: inline-block;
   }
+object {
+  left: 100px;
+  top: 200px;
+  width: 600px;
+  height: 400px;
+}
