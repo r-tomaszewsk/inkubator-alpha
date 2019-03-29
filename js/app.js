@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("firstPage").classList.remove("hidden");
   document.getElementById("secondPage").classList.add("hidden");
-  console.log(document.getElementById("firstPage"));
-  console.log(document.getElementById("secondPage"));
   document.getElementById("backButton").addEventListener("click", function (event) {
     document.getElementById("firstPage").classList.remove("hidden");
     document.getElementById("secondPage").classList.add("hidden");
